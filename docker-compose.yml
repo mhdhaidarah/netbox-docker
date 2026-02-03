@@ -20,7 +20,7 @@ services:
       - netbox-scripts-files:/opt/netbox/netbox/scripts:rw
   netbox-worker:
     <<: *netbox
-    restart: always
+#    restart: always
     depends_on:
       netbox:
         condition: service_healthy
